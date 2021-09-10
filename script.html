@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <style>
+  a {
+    font-size: 25px;
+  }
+  </style>
+
+<div class="container mt-3">
+  <h3>Tooltip Methods</h3>
+  <a href="#" data-toggle="tooltip" title="Hooray!">Tooltip Example</a>
+  <div>
+    <p>Click on the buttons to manually control the tooltip above:</p>
+    <button type="button" class="btn btn-primary">Show</button>
+    <button type="button" class="btn btn-warning">Hide</button>
+    <button type="button" class="btn btn-success">Toggle</button>
+    <button type="button" class="btn btn-danger">Dispose</button>
+  </div>   
+</div>
+
+<style>
+  body {font-family: Arial, Helvetica, sans-serif;}
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  </style>
+  </head>
+  <body>
+  
+  <h2>Modal Example</h2>
+  
+  <!-- Trigger/Open The Modal -->
+  <button id="myBtn">Open Modal</button>
+  
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+  
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p>Some text in the Modal..</p>
+    </div>
+  
+  </div>
+  
+  <script>
+  // Get the modal
+  var modal = document.getElementById("myModal");
+  
+  // Get the button that opens the modal
+  var btn = document.getElementById("myBtn");
+  
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+  
+  // When the user clicks the button, open the modal 
+  btn.onclick = function() {
+    modal.style.display = "block";
+  }
+  
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+  
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+  </script>
+  
+
+  
+
+     <!-- <input type="text" id="nData" onkeyup="jack()">
+
+<div id="result"></div>
+
+
+
+
+ //   var test = "my value";
+//document.getElementById("result").innerHTML = test;
+    /*
+    //Checks local file
+    document.getElementById("result").innerHTML = localStorage.getItem("lastname");
+    let lastName = localstorage.getItem('lastname');
+// Check browser support
+if (lastName !== "undefined") {
+  // Store
+  localStorage.setItem("lastname", "Smith");
+  // Retrieve
+  document.getElementById("result").innerHTML = localStorage.getItem("lastname");
+} else {
+  document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
+}
+
+*/
+
+
+
+// Put the object into storage
+//localStorage.setItem('testObject', JSON.stringify(testObject));
+
+// Retrieve the object from storage
+//var retrievedObject = localStorage.getItem('testObject');
+
+//document.getElementById("result").innerHTML = testObject;
+
+
+/*
+function jack()
+{
+var test = document.getElementById("cunt").value;
+
+document.getElementById("result").innerHTML = test;
+
+}
+
+*/ -->
+
+</body>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="assets/js/scripttest.js"></script>
+</html>

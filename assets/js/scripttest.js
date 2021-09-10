@@ -1,0 +1,14 @@
+$(document).ready(function(){
+    $('.btn-primary').click(function(){
+      $('[data-toggle="tooltip"]').tooltip('show');
+    });
+    $(".btn-warning").click(function(){
+      $("[data-toggle='tooltip']").tooltip('hide');
+    });
+    $(".btn-success").click(function(){
+      $("[data-toggle='tooltip']").tooltip('toggle');
+    });
+    $(".btn-danger").click(function(){
+      $("[data-toggle='tooltip']").tooltip('dispose');
+    });
+  });
